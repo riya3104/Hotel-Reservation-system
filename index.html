@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Hotel Reservation System</title>
+</head>
+<body>
+    <h1>Welcome to Our Hotel Reservation System</h1>
+    <p>Please select an option from the menu below to proceed with your booking.</p>
+    
+    <div class="options">
+        <a href="{{ url_for('book') }}">Book a Room</a>
+        <a href="{{ url_for('cancel') }}">Cancel a Booking</a>
+        <a href="{{ url_for('display') }}">Display Rooms</a>
+    </div>
+
+    <div class="image-container">
+        <img src="{{ url_for('static', filename='hotel.jpeg') }}" alt="Hotel Image">
+    </div>
+</body>
+</html>
